@@ -23,3 +23,65 @@ function timesFive(x){
     return results
 }
 
+// function sleepIn(weekday, weekend){
+//     if(weekend = "Saturday" or weekend = "Sunday"){
+//         return "Sleep in."
+//     } else {
+//         return "Work"
+//     }
+// }
+
+//Arrays
+var countries = ["USA", "Germany", "China", "Russia"]
+console.log(countries[0])
+
+countries[2] = "France"
+console.log(countries[2])
+
+console.log(countries)
+
+// var mixed = [True, "True", 1]
+
+var myArr = ['one', 'two', 'three']
+
+var lastItem = myArr.pop()
+
+console.log(myArr)
+
+myArr.push("four")
+console.log(myArr)
+
+for(var i = 0; i<Array.length; i++){
+
+}
+
+function addAwesome(name){
+    console.log(name+" is awesome!")
+}
+
+let carInfo = {
+    make: "Toyota",
+    year: 1995,
+    model: "Camery"
+};
+
+console.log(carInfo)
+console.log(carInfo["make"])
+
+let myNewO = {
+    a: "hello",
+    b: [1,2,3],
+    c: {
+        inside: [
+            'a', 'b', 'c'
+        ]
+    }
+}
+
+console.log(myNewO["a"])
+console.log(myNewO["b"][1])
+console.log(myNewO["c"].inside[1])
+
+for(key in carInfo){
+    console.log(key)
+}
