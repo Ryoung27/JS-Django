@@ -1,87 +1,117 @@
-function hello(){
-    console.log("Hello World")
-}
+// function hello(){
+//     console.log("Hello World")
+// }
 
-hello()
+// hello()
 
-function hello_you(name="Ronnie", title='Sir '){
-    // console.log("Hello " + title + name)
-    return title+ " "+name;
-}
+// function hello_you(name="Ronnie", title='Sir '){
+//     // console.log("Hello " + title + name)
+//     return title+ " "+name;
+// }
 
-hello_you("richie", "Guy ")
-console.log(hello_you())
+// hello_you("richie", "Guy ")
+// console.log(hello_you())
 
-function addNumb(x, y){
-    console.log(x + y)
-}
+// function addNumb(x, y){
+//     console.log(x + y)
+// }
 
-addNumb(1, 2)
+// addNumb(1, 2)
 
-function timesFive(x){
-    var results = x * 5
-    return results
-}
+// function timesFive(x){
+//     var results = x * 5
+//     return results
+// }
 
-// function sleepIn(weekday, weekend){
-//     if(weekend = "Saturday" or weekend = "Sunday"){
-//         return "Sleep in."
-//     } else {
-//         return "Work"
+// // function sleepIn(weekday, weekend){
+// //     if(weekend = "Saturday" or weekend = "Sunday"){
+// //         return "Sleep in."
+// //     } else {
+// //         return "Work"
+// //     }
+// // }
+
+// //Arrays
+// var countries = ["USA", "Germany", "China", "Russia"]
+// console.log(countries[0])
+
+// countries[2] = "France"
+// console.log(countries[2])
+
+// console.log(countries)
+
+// // var mixed = [True, "True", 1]
+
+// var myArr = ['one', 'two', 'three']
+
+// var lastItem = myArr.pop()
+
+// console.log(myArr)
+
+// myArr.push("four")
+// console.log(myArr)
+
+// for(var i = 0; i<Array.length; i++){
+
+// }
+
+// function addAwesome(name){
+//     console.log(name+" is awesome!")
+// }
+
+// let carInfo = {
+//     make: "Toyota",
+//     year: 1995,
+//     model: "Camery"
+// };
+
+// console.log(carInfo)
+// console.log(carInfo["make"])
+
+// let myNewO = {
+//     a: "hello",
+//     b: [1,2,3],
+//     c: {
+//         inside: [
+//             'a', 'b', 'c'
+//         ]
 //     }
 // }
 
-//Arrays
-var countries = ["USA", "Germany", "China", "Russia"]
-console.log(countries[0])
+// console.log(myNewO["a"])
+// console.log(myNewO["b"][1])
+// console.log(myNewO["c"].inside[1])
 
-countries[2] = "France"
-console.log(countries[2])
+// for(key in carInfo){
+//     console.log(key)
+// }
 
-console.log(countries)
 
-// var mixed = [True, "True", 1]
-
-var myArr = ['one', 'two', 'three']
-
-var lastItem = myArr.pop()
-
-console.log(myArr)
-
-myArr.push("four")
-console.log(myArr)
-
-for(var i = 0; i<Array.length; i++){
-
-}
-
-function addAwesome(name){
-    console.log(name+" is awesome!")
-}
-
-let carInfo = {
+var carInfo = {
     make: "Toyota",
     year: 1995,
-    model: "Camery"
-};
-
-console.log(carInfo)
-console.log(carInfo["make"])
-
-let myNewO = {
-    a: "hello",
-    b: [1,2,3],
-    c: {
-        inside: [
-            'a', 'b', 'c'
-        ]
+    model: "Camry",
+    carAlert: function(){
+        alert("We've got a car here!")
     }
 }
 
-console.log(myNewO["a"])
-console.log(myNewO["b"][1])
-console.log(myNewO["c"].inside[1])
-
-for(key in carInfo){
-    console.log(key)
+var simple = {
+    prop: "Hello",
+    myMethod: function(){
+        console.log("The myMethod was called.")
+    }
 }
+
+console.dir(simple)
+
+simple.myMethod()
+
+let myObj = {
+    name: "Richie",
+    greet: function(){
+        console.log("Hello " + this.name)
+    }
+}
+
+myObj.greet()
